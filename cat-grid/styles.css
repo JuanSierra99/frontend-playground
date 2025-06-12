@@ -1,0 +1,56 @@
+body {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  background-color: rgb(37, 35, 35);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel {
+  display: grid;
+  width: auto;
+  height: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  gap: 10px;
+  max-width: 700px;
+  margin: auto;
+  background-color: rgb(222, 211, 211);
+  padding: 10px;
+}
+
+.main-image {
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  grid-column: 1 / 2;
+  grid-row: 1;
+  grid-column: 1/-1;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.thumbnail {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+  transition: all 0.2s;
+}
+
+.thumbnail:hover {
+  transform: scale(1.08);
+}
+
+.scroll-buttons{
+  display: flex;
+
+  width: 100%;
+}
+
+.scroll-buttons > button{
+  flex: 1 0 50%;
+}
