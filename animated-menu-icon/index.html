@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./src/style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animate Menu Icon</title>
+  </head>
+  <body>
+    <button
+      id="animated-button"
+      class="menu-button"
+      aria-expanded="false"
+      aria-label="Toggle menu"
+    >
+      <svg
+        class="hamburger"
+        viewbox="0 0 100 100"
+        stroke="black"
+        aria-label="open menu"
+      >
+        <polyline
+          points="10,30 90,30"
+          stroke="white"
+          stroke-width="8"
+          stroke-linecap="round"
+        >
+          <animate
+            id="animate-top-line-open"                           
+            attributeName="points"
+            begin="indefinite"
+            values="10,30 90,30; 10,50 90,50; 21.72,21.72 78.28,78.28"
+            dur=".15s"
+            keyTimes="0; 0.5; 1"
+            repeatCount="1"
+            fill="freeze"
+          />
+          <animate
+            id="animate-top-line-close"                            
+            attributeName="points"
+            begin="indefinite"
+            values="21.72,21.72 78.28,78.28; 10,50 90,50; 10,30 90,30"
+            dur=".15s"
+            keyTimes="0; 0.5; 1"
+            repeatCount="1"
+            fill="freeze"
+          />
+        </polyline>
+        <polyline
+          points="10,70 90, 70"
+          stroke="white"
+          stroke-width="8"
+          stroke-linecap="round"
+        >
+          <animate
+            id="animate-bottom-line-open"
+            attributeName="points"
+            begin="indefinite"
+            values="10,70 90,70; 10,50 90,50; 21.72,78.28 78.28, 21.72"
+            keyTimes="0; 0.5; 1"
+            fill="freeze"
+            dur=".15s"
+            repeatCount="1"
+          />
+          <animate
+            id="animate-bottom-line-close"
+            attributeName="points"
+            begin="indefinite"
+            values="21.72,78.28 78.28, 21.72; 10,50 90,50; 10,70 90,70"
+            keyTimes="0; 0.5; 1"
+            fill="freeze"
+            dur=".15s"
+            repeatCount="1"
+          />
+        </polyline>
+      </svg>
+    </button>
+    <script src="src/main.js"></script>
+  </body>
+</html>

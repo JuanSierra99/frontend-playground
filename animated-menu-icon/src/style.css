@@ -1,0 +1,22 @@
+body{
+  display: grid;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #344e41;
+  place-items: center;
+}
+
+.hamburger {
+    cursor: pointer;
+  }
+
+.menu-button {
+    display: block;
+    border: none;
+    padding: 0;
+    width: 80px;
+    height: 80px;
+    aspect-ratio: 1/1;
+    background-color: transparent;
+  }
