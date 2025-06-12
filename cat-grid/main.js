@@ -28,23 +28,23 @@ const handleShift = (newThumbnailsArr) => {
   }
 };
 
-const goLeft = () => {
+const shiftLeft = () => {
   if (leftIndex > 0) {
     handleShift(imageSources.slice(--leftIndex, --rightIndex));
   }
 };
 
-const goRight = () => {
+const shiftRight = () => {
   if (rightIndex < imageSources.length) {
     handleShift(imageSources.slice(++leftIndex, ++rightIndex));
   }
 };
 
 const shiftLeftBtn = document.querySelector("#left");
-shiftLeftBtn.addEventListener("click", goLeft);
+shiftLeftBtn.addEventListener("click", shiftLeft);
 
 const shiftRightBtn = document.querySelector("#right");
-shiftRightBtn.addEventListener("click", goRight);
+shiftRightBtn.addEventListener("click", shiftRight);
 
 const ht = document.querySelector("html");
 const la = ht.getAttribute("lang");
