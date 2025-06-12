@@ -5,6 +5,7 @@ body {
   background-color: #1e2749;
 }
 
+button {
   --glow-color: #e4d9ff;
   --bg-color: #273469;
   position: relative;
