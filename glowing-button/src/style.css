@@ -1,0 +1,56 @@
+body {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  background-color: #1e2749;
+}
+
+  --glow-color: #e4d9ff;
+  --bg-color: #273469;
+  position: relative;
+  color: var(--glow-color);
+  padding: 15px;
+  background-color: var(--bg-color);
+  border: none;
+  border-radius: 25px;
+}
+
+button::before,
+button::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: linear-gradient(
+    var(--angle),
+    var(--glow-color),
+    var(--bg-color)
+  );
+  inset: -0.1rem;
+  animation: rotation 10s linear none infinite;
+  z-index: -1;
+  border-radius: inherit;
+}
+
+button::before {
+  filter: blur(2px);
+  transition: filter 1s ease-out;
+}
+
+button:hover::before {
+  filter: blur(20px);
+}
+
+@property --angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes rotation {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
