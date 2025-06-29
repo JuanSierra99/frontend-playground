@@ -1,11 +1,10 @@
 # About The Project
 
-This directory contains all my coding examples, expirements, and learning exercises as i read through Daniel Shiffman's *The Nature of Code**. Most examples are based on the book, though some may deviate as i try to implement things my own way, or expirement a bit further. 
+This directory contains all my coding examples, expirements, and learning exercises as i read through Daniel Shiffman's [*The Nature of Code*](https://natureofcode.com/). Most examples are based on the book, though some may deviate as i try to implement things my own way, or expirement a bit further. 
 
-<div style="display: flex; flex-direction: column; justify-content: center; align-items: center">
+<p align="center">
     <img style="max-width: 250px" src="./nature-of-code-cover.png" alt="Cover for 'The Nature of Code' by Daniel Shiffman"/>
-    <a>The Nature of Code</a>
-</div>
+</p>
 
 ## Setup
 
