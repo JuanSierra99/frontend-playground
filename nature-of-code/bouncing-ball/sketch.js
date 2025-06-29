@@ -4,7 +4,7 @@ let velocity;
 function setup() {
   createCanvas(400, 400);
   position = createVector(0, 0);
-  velocity = createVector(2.5, 3, 1);
+  velocity = createVector(2.5, 3);
 }
 
 function draw() {
@@ -19,8 +19,5 @@ function draw() {
   if (position.y >= 400 || position.y <= 0) {
     velocity.y *= -1;
   }
-  if (position.z >= 50 || position.z <= 0){
-    velocity.z *= -1;
-  }
-  circle(position.x, position.y, position.z);
+  circle(position.x, position.y, 50);
 }
