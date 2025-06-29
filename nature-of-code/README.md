@@ -14,3 +14,4 @@ For my purposes i will mainly use the VS Code extension as it will allow me to t
 
 ## Demos
 [Bouncing Ball](https://editor.p5js.org/juzier/full/K0bxs4ut_)
+[Vector Subtraction](https://editor.p5js.org/juzier/full/txR8g_QMF)
