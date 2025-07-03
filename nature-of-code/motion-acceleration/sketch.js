@@ -49,5 +49,5 @@ function draw() {
   mover.update();
   mover.checkBounds();
   mover.show();
-  text("Velocity: " + Math.round(mover.velocity.y * 10) / 10, 10, 30)
+  text("Velocity: " + Math.round(mover.velocity.mag() * 10) / 10, 10, 30)
 }
