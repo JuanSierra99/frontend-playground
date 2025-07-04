@@ -50,5 +50,5 @@ function draw() {
   car.draw();
   textSize(20);
   text("velocity: " + Math.round(car.velocity.mag() * 10) / 10, 10, 30);
-  text(keyIsPressed, 100, 100);
+  text("press any key to move the car", 10, 70);
 }
