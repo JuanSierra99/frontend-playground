@@ -19,3 +19,4 @@ For my purposes i will mainly use the VS Code extension as it will allow me to t
 * [Vector Normalization](https://editor.p5js.org/juzier/full/dqLIvB5kQ)
 * [Motion: Velocity](https://editor.p5js.org/juzier/full/VWr25sU6S)
 * [Motion: Acceleration](https://editor.p5js.org/juzier/full/pho4HNEx5)
+* [Motion: Acceleration (Car)](https://editor.p5js.org/juzier/full/0xgs-u_ov)
