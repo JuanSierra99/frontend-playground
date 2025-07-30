@@ -22,3 +22,4 @@ For my purposes i will mainly use the VS Code extension as it will allow me to t
 * [Motion: Acceleration](https://editor.p5js.org/juzier/full/pho4HNEx5)
 * [Motion: Acceleration (Car)](https://editor.p5js.org/juzier/full/0xgs-u_ov)
 * [Motion: Perlin Noise](https://editor.p5js.org/juzier/full/7Z8Z3NpK1)
+* [Forces: Balloon Exercise](https://editor.p5js.org/juzier/full/hjpu2BgNS)
